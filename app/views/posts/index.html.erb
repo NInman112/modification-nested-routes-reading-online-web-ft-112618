@@ -2,8 +2,13 @@
 <% @posts.each do |post| %>
   <div>
     <h2><%= post.title %></h2>
+<<<<<<< HEAD
     
     <h3>by: <%= link_to post.author.name, author_posts_path(post.author) if post.author  %></h3>
+=======
+    <% binding.pry %>
+    <h3>by: <%= link_to post.author.name, author_posts_path(post.author) %></h3>
+>>>>>>> 23d89afa91b166a825b4ad69f160c8392002581d
     <p><%= post.description %></p>
   </div>
 <% end %>
